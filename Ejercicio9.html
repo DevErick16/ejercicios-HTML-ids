@@ -34,9 +34,15 @@
                 <label for="precio">Precio</label>
                 <input type="number"> <span>&euro; &nbsp;</span>
 
+                
                 <label for="precio">Impuestos</label>
-                <input type="number" style="width: 50px;"><span>%</span>
-                <label for="opciones"></label>
+                <select name="precio" id="precio">
+                    <optgroup label="Porcentaje">
+                        <option value="bb">14%</option>
+                        <option value="bm">19%</option>
+                        <option value="ba" selected="selected">4%</option>
+                    </optgroup>
+                </select>
             <br><br><br>
             <label >Promocion</label><br>
             <input type="radio" id="opc1" name="clase">
@@ -55,6 +61,9 @@
                 data-name="productos ABC"
                 data-title="Analisis de ventas anuales">
                 <thead>
+                    <tr>
+                        <th colspan="5" style="text-align: center;">Expansion de ventas</th>
+                    </tr>
                     <tr>
                         <th rowspan="2">Año</th>
                         <th></th>
