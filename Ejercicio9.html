@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, td{
+        border: 1px solid #000000;
+    }
+</style>
+<body>
+    <header>
+        <h1>Ejercicio 9</h1>
+        <h3>Informacion sobre el pedido</h3>
+        <section>
+            <p>Datos básicos</p>
+            <fieldset>
+                <label for="nombre">Nombre</label><br>
+                <input type="nombre" id="nombre"> 
+                <br><br>
+                <label for="deescripcion">Descripción</label><br>
+                <textarea name="deescripcion" id="descripcion" cols="50" rows="7"></textarea>
+                <br><br>
+                <label for="archivo">Foto</label>
+                <input type="file" id="archivo" value="">
+                <br><br>
+            <input type="checkbox" id="opcion1" >
+            <label for="opcion1">Añadir contador de visitas</label>
+            </fieldset>
+            <p>Datos economicos</p>
+            <fieldset>
+                <label for="precio">Precio</label>
+                <input type="number"> <span>&euro; &nbsp;</span>
+
+                <label for="precio">Impuestos</label>
+                <input type="number" style="width: 50px;"><span>%</span>
+                <label for="opciones"></label>
+            <br><br><br>
+            <label >Promocion</label><br>
+            <input type="radio" id="opc1" name="clase">
+            <label for="ninguno">Ninguno</label><br>
+            <input type="radio" id="opc1" name="clase">
+            <label for="transporte">Transporte gratuito</label><br>
+            <input type="radio" id="opc1" namxe="clase">
+            <label for="descuento">Descuento</label>
+            </fieldset>
+        </section>
+        <br><br>
+        <section>
+            <table id="table"
+                data-years="5"
+                data-products="100"
+                data-name="productos ABC"
+                data-title="Analisis de ventas anuales">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Año</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Producto A</th>
+                        <th>Producto B</th>
+                        <th>Producto C</th>
+                        <th>Producto D</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>N-3</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>N-2</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>N-1</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>N</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Año</td>
+                        <td>Producto A</td>
+                        <td>Producto B</td>
+                        <td>Producto C</td>
+                        <td>Producto D</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </header>
+    <script>
+        
+        var tableElement = document.getElementById('table');
+        var numYear= tableElement.getAttribute('data-years');
+        var numProduct = tableElement.getAttribute('data-products');
+        var nameProduct = tableElement.getAttribute('data-name');
+        var titleTable = tableElement.getAttribute('data-title');
+
+        console.log('años:', numYear);
+        console.log('numero de productos mostrados:', numProduct);
+        console.log('nombre de productos:', nameProduct);
+        console.log('titulo de la tabla:', titleTable);
+
+    </script>
+</body>
+</html>

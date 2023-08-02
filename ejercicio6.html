@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicio 6</h1>
+        <p>Genere una página que despliegue un video y audio con diferentes origenes</p>
+    </header>
+    <section>
+        <h2>Reproductor Video</h2>
+        <video width="400" controls autoplay poster="videos/watchtrailer.gif">
+            <source src="videos/mov_bbb.mp4" type="video/mp4">
+            <source src="videos/mov_bbb.ogg" type="video/ogg">
+            
+        </video>
+    </section>
+    
+    <section>
+        <h2>Reproductor audio</h2>
+        <audio controls>
+            <source src="audio/audio.opus" type="audio/opus">
+            <source src="audio/audio.acc" type="audio/mp4">
+            Tu navegador no soporta reproduccion de audios
+        </audio>
+    </section>
+</body>
+</html>
